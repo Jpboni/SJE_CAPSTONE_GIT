@@ -1,0 +1,264 @@
+html, body {
+      margin: 0;
+      padding: ;
+      width: 100%;
+      height: 100%;
+
+
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+
+/* css grid calamity */
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+ body {
+   box-sizing: border-box;
+}
+
+
+body::before,
+body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+body * {
+  box-sizing: inherit;
+}
+
+p, h1 {
+  margin: 0; padding: 0;
+
+}
+
+ body, .text-light-black {
+   color: rgba(0,0,0,0.6);
+}
+.text-black {
+  color: rgba(0,0,0,0.9);
+}
+.text-muted {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+.p-absolute {
+  position: absolute;
+
+}
+
+.styled-link {
+  text-decoration: none;
+  outline: none;
+  color: #2196fe;
+  transition: all 0.25s ease-in;
+}
+
+.styled-link:hover,
+.styled-link:focus,
+.styled-link:active {
+  color: #536dfe;
+}
+
+
+/*Shadow ng bawat grid*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right{
+  float: right;
+}
+
+
+/**Margin and padding utilities*/
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.font-face{
+      perspective: 1px;
+      transform-style: preserve-3d;
+      font-family: "Luna";
+}
+
+
+.navbar{
+  z-index: 2;
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  width: 100%;
+}
+
+
+.logo{
+  font-family: "Century Gothic";
+  font-weight: 1000;
+  font-size: 20px;
+  margin-left:50px;
+
+}
+
+.menu{
+
+  position: absolute;
+  right: 60px;
+}
+
+.menu a{
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.menu a:hover{
+  color: #6ab04c;
+}
+
+.btn{
+  display: none;
+  position: absolute;
+  right: 30px;
+}
+
+.btn:hover > span{
+  background: #6ab04c;
+
+}
+
+.btn span{
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #333;
+}
+
+
+@media only screen and (max-width : 600px) {
+  .navbar{
+    overflow: visible;
+  }
+
+  .menu{
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .menu a{
+    display: block;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .btn{
+    display: block;
+    cursor: pointer;
+  }
+
+  .show{
+    max-height: 1000px;
+  }
+}
+
+
+.content{
+  margin: inherit;
+  min-height: 90%;
+  min-width: 100%;
+  padding-top:90px;
+  align-content: left;
+  width: 140%;
+  position:static;
+  z-index: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.module{
+  width: 50%;
+  min-height: 50px;
+  background: #FFF;
+  position: relative;
+  display: block;
+}
+
+.head_module{
+  width: 100%;
+  height: 50px;
+  background: #f0f0f0;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon_arrow_down{
+  width: 30px;
+  right: 20px;
+  position: absolute;
+  transition: transform 0.2s;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.title_head_module{
+  align-self: flex-start;
+  font-size: 1.5em;
+  position: absolute;
+  margin-left: 20px;
+
+}
+
+.text_module{
+  width:auto;
+  position: relative;
+  height: 0;
+  background:#FFF;
+	-webkit-transition: all  ease .2s;
+	-moz-transition: all  ease .2s;
+	transition: all  ease .2s;
+  overflow: hidden;
+}
+
+.text_module p{
+  height: 100%;
+  width: auto;
+  text-align: justify;
+  padding: 20px;
+}
